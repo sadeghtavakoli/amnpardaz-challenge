@@ -1,18 +1,18 @@
 .header {
   font-size: 1.2rem;
   grid-area: header;
-  background-color: #ffffff;
+  background-color: var(--primary_color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   justify-content: center;
 
   .option {
-    color: black;
+    color: var(--text_color);
     text-decoration: none;
     margin: auto 1rem;
     &:hover,
     &.uniqe-option {
-      color: #7167a2;
+      color: var(--secondary_color);
     }
   }
 }

@@ -4,7 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+:root {
+  /* color variables : */
+  --primary_color: white;
+  --secondary_color: #7167a2;
+  --accent_color: #d9d0fd;
+  --background_color: #f1f4fd;
+}
 *,
 *::after,
 *::before {
@@ -19,7 +25,7 @@ body {
   font-family: "yekan", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1f4fd;
+  background-color: var(--background_color);
 }
 
 .font-awsome-icon {
