@@ -1,10 +1,14 @@
 import "./App.css";
+import Header from "./components/header/header.component";
+import Main from "./components/main/main.component";
+import SideBar from "./components/side-bar/side-bar.component";
 
 function App() {
   return (
-    <div className="App">
-      <h1>amnpardaz challenge</h1>
-      <h1>امن پرداز چالش</h1>
+    <div className="app">
+      <Header />
+      <Main />
+      <SideBar />
     </div>
   );
 }
