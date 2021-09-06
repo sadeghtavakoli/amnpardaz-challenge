@@ -21,3 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f4fd;
 }
+
+.font-awsome-icon {
+  margin: 0 0.7rem;
+}
