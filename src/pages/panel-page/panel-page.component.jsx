@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonMore from "../../components/button-more/button-more.component";
 import Card from "../../components/card/card.component";
 import Message from "../../components/message/message.component";
 import "./panel-page.styles.scss";
@@ -9,11 +10,8 @@ const PanelPage = () => {
         <Message message="شما تا به حال تیکتی ثبت نکرده اید" />
       </Card>
       <Card />
-      <Card>
-        <Message
-          message="شما تا به حال تیکتی ثبت نکرده اید"
-          subMessage="25مرداد1399"
-        />
+      <Card title="پیام ها">
+        <ButtonMore />
       </Card>
       <Card />
       <Card />

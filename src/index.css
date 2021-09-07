@@ -17,13 +17,13 @@
 *::before {
   margin: 0;
   box-sizing: border-box;
+  font-family: "yekan", Arial, Helvetica, sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 body {
   margin: 0;
-  font-family: "yekan", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background_color);
@@ -31,4 +31,10 @@ body {
 
 .fontawsome-icon {
   margin: 0 0.7rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
