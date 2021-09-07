@@ -1,7 +1,10 @@
 .panel {
   padding: 6rem 3rem;
   display: grid;
-  grid-template-columns: 1fr 1.3fr 1.5fr;
+  grid-template-columns: 1.5fr 1.3fr 1fr;
   grid-template-rows: repeat(2, 25rem);
+  grid-template-areas:
+    "monthly-services messages services-extension"
+    "wallet last-tickets services-extension";
   gap: 2.5rem 1.5rem;
 }
