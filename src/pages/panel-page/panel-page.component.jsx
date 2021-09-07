@@ -5,6 +5,7 @@ import LastTickets from "../../components/last-tickets/last-tickets.component";
 import Message from "../../components/message/message.component";
 import MessagesList from "../../components/messages-list/messages-list.component";
 import ServicesExtenstion from "../../components/services-extension/services-extension.component";
+import Wallet from "../../components/wallet/wallet.component";
 import "./panel-page.styles.scss";
 const PanelPage = () => {
   return (
@@ -14,12 +15,8 @@ const PanelPage = () => {
       </Card>
       <ServicesExtenstion />
       <MessagesList />
+      <Wallet />
       <LastTickets />
-      <Card>
-        <ButtonPlus text="افزایش موجودی" />
-        <ButtonPlus text="ایجاد تیکت" />
-      </Card>
-      <Card />
     </section>
   );
 };
