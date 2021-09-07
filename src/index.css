@@ -9,6 +9,7 @@
   --primary_color: white;
   --secondary_color: #7167a2;
   --accent_color: #d9d0fd;
+  --active_color: #f9f6fd;
   --background_color: #f1f4fd;
 }
 *,
@@ -28,6 +29,6 @@ body {
   background-color: var(--background_color);
 }
 
-.font-awsome-icon {
+.fontawsome-icon {
   margin: 0 0.7rem;
 }

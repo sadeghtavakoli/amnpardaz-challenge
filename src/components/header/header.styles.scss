@@ -9,10 +9,14 @@
   .option {
     color: var(--text_color);
     text-decoration: none;
-    margin: auto 1rem;
+    margin: auto 0;
+    padding: 1rem;
     &:hover,
     &.uniqe-option {
       color: var(--secondary_color);
+    }
+    &:active {
+      background-color: var(--active_color);
     }
   }
 }

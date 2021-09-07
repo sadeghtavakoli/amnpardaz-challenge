@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <Link className="option uniqe-option" to="/">
         Cloud Vps
-        <FontAwesomeIcon icon={faChevronLeft} className="font-awsome-icon" />
+        <FontAwesomeIcon icon={faChevronLeft} className="fontawsome-icon" />
       </Link>
       <Link className="option" to="/">
         CDN
