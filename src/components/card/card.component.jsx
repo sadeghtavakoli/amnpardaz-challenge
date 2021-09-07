@@ -1,8 +1,18 @@
 import React from "react";
 import "./card.styles.scss";
-const Card = ({ title, children, cornerRound = false, className }) => {
+const Card = ({
+  title,
+  children,
+  cornerRound = false,
+  containerClass,
+  className,
+}) => {
   return (
-    <article className={`card ${cornerRound ? "corner-rounded" : ""}`}>
+    <article
+      className={`card ${containerClass} ${
+        cornerRound ? "corner-rounded" : ""
+      }`}
+    >
       <div className="card-header">
         <h2 className="card-heading">{title}</h2>
         <hr className="seprator" />
