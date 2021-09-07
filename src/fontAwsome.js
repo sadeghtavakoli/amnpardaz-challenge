@@ -10,6 +10,7 @@ import {
   faDoorOpen,
   faWrench,
   faUser,
+  faPlusCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -22,5 +23,6 @@ library.add(
   faMoneyCheck,
   faWrench,
   faUser,
-  faDoorOpen
+  faDoorOpen,
+  faPlusCircle
 );

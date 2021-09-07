@@ -11,6 +11,7 @@
   --accent_color: #d9d0fd;
   --active_color: #f9f6fd;
   --background_color: #f1f4fd;
+  --button_color: #80adfd;
 }
 *,
 *::after,
@@ -37,4 +38,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }

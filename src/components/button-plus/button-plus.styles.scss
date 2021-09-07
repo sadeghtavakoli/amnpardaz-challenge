@@ -1,0 +1,15 @@
+.button-plus {
+  background: var(--button_color);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  direction: rtl;
+  border-radius: 1rem;
+  margin: 0 auto;
+  &:active {
+    filter: brightness(0.95);
+  }
+}

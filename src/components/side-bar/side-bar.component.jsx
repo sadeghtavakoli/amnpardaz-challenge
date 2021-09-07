@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./side-bar.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useHistory, useLocation } from "react-router";
