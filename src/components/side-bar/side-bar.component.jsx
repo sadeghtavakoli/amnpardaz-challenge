@@ -52,8 +52,8 @@ const SideBar = () => {
               }
             }}
           >
-            <p>{text}</p>
             <FontAwesomeIcon icon={["fas", icon]} className="fontawsome-icon" />
+            <p>{text}</p>
           </div>
         );
       })}
