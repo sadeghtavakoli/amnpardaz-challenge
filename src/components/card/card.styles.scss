@@ -14,17 +14,35 @@
   .card-header {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    .card-heading {
-      font-size: 1.5rem;
+    flex-direction: row-reverse;
+    &.more-btn--right {
+      flex-direction: row;
     }
-    .seprator {
-      width: 22rem;
-      max-width: 100%;
-      margin: 1rem 0;
+    .more-btn {
+      flex: 1;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: var(--primary_color);
+      &:active {
+        color: var(--secondary_color);
+      }
+    }
+    .card-heading {
+      flex: 19;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card-title {
+        font-size: 1.5rem;
+      }
+      .seprator {
+        width: 22rem;
+        max-width: 100%;
+        margin: 1rem 0;
+      }
     }
   }
+
   .card-container {
     width: 100%;
   }

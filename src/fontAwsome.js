@@ -11,6 +11,8 @@ import {
   faWrench,
   faUser,
   faPlusCircle,
+  faEllipsisH,
+  faEllipsisV,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -24,5 +26,7 @@ library.add(
   faWrench,
   faUser,
   faDoorOpen,
-  faPlusCircle
+  faPlusCircle,
+  faEllipsisH,
+  faEllipsisV
 );
