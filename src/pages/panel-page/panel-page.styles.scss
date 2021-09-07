@@ -4,7 +4,7 @@
   grid-template-columns: 1.5fr 1.3fr 1fr;
   grid-template-rows: repeat(2, 25rem);
   grid-template-areas:
-    "monthly-services messages services-extension"
+    "monthly-usage messages services-extension"
     "wallet last-tickets services-extension";
   gap: 2.5rem 1.5rem;
 }

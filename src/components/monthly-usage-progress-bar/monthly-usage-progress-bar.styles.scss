@@ -1,0 +1,7 @@
+.monthly-usage-progress-bar {
+  grid-area: usage-progress-bar;
+  margin: auto;
+  .progress-bar {
+    width: 14rem;
+  }
+}

@@ -5,8 +5,8 @@ const Card = ({
   title,
   children,
   cornerRound = false,
-  containerClass,
-  className,
+  containerClass = "",
+  className = "",
   onClick,
   btnToRight = false,
 }) => {

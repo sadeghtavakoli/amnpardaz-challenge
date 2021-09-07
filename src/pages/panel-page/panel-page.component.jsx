@@ -4,15 +4,14 @@ import Card from "../../components/card/card.component";
 import LastTickets from "../../components/last-tickets/last-tickets.component";
 import Message from "../../components/message/message.component";
 import MessagesList from "../../components/messages-list/messages-list.component";
+import MonthlyUsage from "../../components/monthly-usage/monthly-usage.component";
 import ServicesExtenstion from "../../components/services-extension/services-extension.component";
 import Wallet from "../../components/wallet/wallet.component";
 import "./panel-page.styles.scss";
 const PanelPage = () => {
   return (
     <section className="panel">
-      <Card title="مصرف ماهیانه سرویس ها">
-        <Message message="شما تا به حال تیکتی ثبت نکرده اید" />
-      </Card>
+      <MonthlyUsage />
       <ServicesExtenstion />
       <MessagesList />
       <Wallet />
