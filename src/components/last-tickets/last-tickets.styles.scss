@@ -1,0 +1,11 @@
+.last-tickets {
+  grid-area: last-tickets;
+
+  .card-container {
+    padding-top: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

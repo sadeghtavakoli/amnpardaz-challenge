@@ -10,6 +10,7 @@ const ButtonPlus = ({ text, onClick }) => {
         <FontAwesomeIcon
           icon={["fas", "plus-circle"]}
           className="fontawsome-icon"
+          color="white"
         />
       </button>
     </div>
