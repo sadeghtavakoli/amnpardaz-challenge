@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 import "./side-bar.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useHistory, useLocation } from "react-router";
 const sideBarItems = [
   {
     id: 0,
     text: "مدیریت پنل",
     className: "option sidebar-header",
     icon: "bars",
+    routeName: "/panel",
   },
-  { id: 1, text: "سرور", className: "option", icon: "server" },
-  { id: 2, text: "امنیت ابری", className: "option", icon: "poo-storm" },
+  {
+    id: 1,
+    text: "سرور",
+    className: "option",
+    icon: "server",
+    routeName: "/server-detail",
+  },
+  {
+    id: 2,
+    text: "امنیت ابری",
+    className: "option",
+    icon: "poo-storm",
+    routeName: "/build-server",
+  },
   { id: 3, text: "فضای ذخیره سازی", className: "option", icon: "warehouse" },
   { id: 4, text: "وی پی ان", className: "option", icon: "shield-virus" },
   { id: 5, text: "پهنای باند", className: "option", icon: "text-width" },
@@ -21,14 +35,20 @@ const sideBarItems = [
 ];
 const SideBar = () => {
   const [selectedId, setSelectedId] = useState(0);
+  const history = useHistory();
+  const { pathname } = useLocation();
   return (
     <nav className="side-bar">
-      {sideBarItems.map(({ id, text, className, icon }) => (
+      {sideBarItems.map(({ id, text, className, icon, routeName }) => (
         <div
           key={id}
-          className={`${className}  ${selectedId === id ? "selected" : ""}`}
+          className={`${className}  ${
+            pathname === routeName ? "selected" : ""
+          }`}
           onClick={() => {
-            if (text) setSelectedId(id);
+            if (routeName) {
+              history.push(routeName);
+            }
           }}
         >
           <p>{text}</p>
