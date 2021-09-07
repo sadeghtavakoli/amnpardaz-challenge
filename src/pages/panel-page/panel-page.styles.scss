@@ -1,4 +1,7 @@
 .panel {
-  font-size: 3rem;
-  grid-area: main;
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.5fr;
+  grid-template-rows: repeat(2, 25rem);
+  gap: 2.5rem 1.5rem;
 }
