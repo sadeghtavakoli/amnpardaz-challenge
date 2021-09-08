@@ -21,6 +21,9 @@ import {
   faExpand,
   faExpandAlt,
   faYenSign,
+  faMemory,
+  faLaptopCode,
+  faFan,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -42,5 +45,8 @@ library.add(
   faUpload,
   faShieldAlt,
   faExpandAlt,
-  faYenSign
+  faYenSign,
+  faMemory,
+  faLaptopCode,
+  faFan
 );

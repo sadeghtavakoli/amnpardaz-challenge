@@ -1,0 +1,20 @@
+.radio-button {
+  font-size: 1.3rem;
+  color: grey;
+  cursor: pointer;
+  span {
+    vertical-align: middle;
+    margin: 0 1rem;
+    background-color: grey;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+  }
+  &.selected {
+    color: var(--text_color);
+    span {
+      background-color: var(--secondary_color);
+    }
+  }
+}
