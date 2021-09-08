@@ -13,9 +13,18 @@ import {
   faPlusCircle,
   faEllipsisH,
   faEllipsisV,
+  faEnvelope,
+  faUpload,
+  faShieldAlt,
+  faExpandArrowsAlt,
+  faChevronLeft,
+  faExpand,
+  faExpandAlt,
+  faYenSign,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
+  faChevronLeft,
   faServer,
   faBars,
   faWarehouse,
@@ -28,5 +37,10 @@ library.add(
   faDoorOpen,
   faPlusCircle,
   faEllipsisH,
-  faEllipsisV
+  faEllipsisV,
+  faEnvelope,
+  faUpload,
+  faShieldAlt,
+  faExpandAlt,
+  faYenSign
 );

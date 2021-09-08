@@ -1,0 +1,40 @@
+.user-services-item {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  .item-details {
+    display: flex;
+    align-items: center;
+  }
+  .item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  &.selected-user-services-item {
+    background: var(--background_color);
+    cursor: auto;
+    .fontawsome-icon {
+      color: var(--secondary_color);
+      opacity: 1;
+      cursor: pointer;
+    }
+    .btn-more {
+      color: var(--text_color);
+    }
+  }
+  .options {
+    margin-right: 3rem;
+  }
+  .fontawsome-icon {
+    color: grey;
+    opacity: 0.5;
+  }
+  .btn-more {
+    color: var(--text_color);
+    opacity: 1;
+  }
+}

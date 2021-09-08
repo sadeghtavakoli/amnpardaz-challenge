@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useImperativeHandle, useState } from "react";
+import UserServicesHeader from "../user-services-header/user-services-header.component";
+import UserServicesList from "../user-services-list/user-services-list.component";
 import "./user-services.styles.scss";
-import Card from "../card/card.component";
-const UserServices = () => {
-  return <Card title="سرویس های شما" containerClass="user-services"></Card>;
+
+const UserServices = ({ showMoreButtonIcon }) => {
+  const [isListExpanded, setIsListExpanded] = useState(true);
+
+  const handleExpand = () => {
+    console.log(isListExpanded);
+    setIsListExpanded((isExpand) => !isExpand);
+  };
+
+  return (
+    <section className="user-services">
+      <UserServicesHeader onExpand={handleExpand} />
+      {isListExpanded && (
+        <UserServicesList showMoreButtonIcon={showMoreButtonIcon} />
+      )}
+    </section>
+  );
 };
 export default UserServices;

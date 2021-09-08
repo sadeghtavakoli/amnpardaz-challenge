@@ -1,14 +1,16 @@
 import React from "react";
 import "./header.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
       <Link className="option uniqe-option" to="/">
         Cloud Vps
-        <FontAwesomeIcon icon={faChevronLeft} className="fontawsome-icon" />
+        <FontAwesomeIcon
+          icon={["fas", "chevron-left"]}
+          className="fontawsome-icon"
+        />
       </Link>
       <Link className="option" to="/">
         CDN
