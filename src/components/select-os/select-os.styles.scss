@@ -1,3 +1,9 @@
 .select-os {
   grid-area: select-os;
+  .card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
 }

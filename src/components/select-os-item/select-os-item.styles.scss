@@ -1,0 +1,38 @@
+.select-os-item {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  &.selected {
+    background-color: var(--background_color);
+    color: var(--secondary_color);
+    font-weight: bold;
+    .os-type {
+      display: block;
+      background-color: var(--button_color);
+      height: fit-content;
+      border-radius: 1rem;
+      padding: 0 2rem;
+    }
+  }
+  .item-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      text-align: center;
+    }
+    .os-logo {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 1rem;
+    }
+  }
+  .os-type {
+    display: none;
+  }
+}
