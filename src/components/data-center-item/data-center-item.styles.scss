@@ -26,4 +26,8 @@
     height: 2.5rem;
     border-radius: 1rem;
   }
+  & + .seprator {
+    border: 1px solid var(--background_color);
+    padding: 0;
+  }
 }

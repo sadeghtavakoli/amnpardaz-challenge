@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./select-resource.styles.scss";
 import Card from "../card/card.component";
 import SelectResourceRadioButton from "../select-resource-radio-button/select-resource-radio-button.component";
-import SelectResourceItemsList from "../select-resource-items-list/select-resource-items-list.component";
+import SelectResourceRangesList from "../select-resource-ranges-list/select-resource-ranges-list.component";
 
 const modes = [
   { id: 0, name: "تنظیمات دستی" },
@@ -24,7 +24,8 @@ const SelectResource = () => {
           />
         ))}
       </div>
-      <SelectResourceItemsList useDefault={selectedModeID} />
+
+      <SelectResourceRangesList useDefault={selectedModeID} />
     </Card>
   );
 };

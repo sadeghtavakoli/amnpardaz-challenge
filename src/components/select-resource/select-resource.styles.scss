@@ -2,10 +2,12 @@
   grid-area: select-resource;
   .card-container {
     padding: 4rem 3rem;
+    height: 100%;
   }
   .radio-buttons-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3rem;
   }
 }
