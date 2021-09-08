@@ -5,6 +5,7 @@ import SelectOS from "../../components/select-os/select-os.component";
 import SelectResource from "../../components/select-resource/select-resource.component";
 import DataCenter from "../../components/data-center/data-center.component";
 import Card from "../../components/card/card.component";
+import ServerDetailHeader from "../../components/server-detail-header/server-detail-header";
 
 const serverInfo = {
   name: "Iran-cloud server",
@@ -32,9 +33,11 @@ const ServerDetail = () => {
   const { name, isActive, IP } = serverInfo;
   return (
     <section className="server-details-page">
-      <div className="server-details-header">
-        <h1 className="title">{name}</h1>
-      </div>
+      <ServerDetailHeader
+        serverName={name}
+        serverIP={IP}
+        isServerActive={isActive}
+      />
       <UserServices showMoreButtonIcon />
       <Card className="server-statics" />
       <Card className="server-chart" />
