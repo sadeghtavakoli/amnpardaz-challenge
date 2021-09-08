@@ -1,0 +1,29 @@
+.data-center-item {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  &.selected {
+    background-color: var(--background_color);
+    color: var(--secondary_color);
+    font-weight: bold;
+  }
+  .item-name-container {
+    display: flex;
+    align-items: center;
+    .square {
+      border: 1 solid black;
+      background-color: gray;
+      margin: 0 5px;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+  .country-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+  }
+}

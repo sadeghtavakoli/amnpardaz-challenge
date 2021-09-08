@@ -31,6 +31,7 @@ const serverInfo = {
 };
 const ServerDetail = () => {
   const { name, isActive, IP } = serverInfo;
+
   return (
     <section className="server-details-page">
       <ServerDetailHeader
