@@ -1,4 +1,26 @@
-.server-detail {
+.server-details-page {
   font-size: 3rem;
-  grid-area: main;
+  padding: 0.5rem 3rem 1rem 0;
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  grid-template-rows: 15rem 10rem 35rem;
+  grid-template-areas:
+    "header  user-services"
+    "server-statics  user-services"
+    "server-chart   user-services";
+  gap: 2rem 4rem;
+  .server-details-page-header {
+    grid-area: header;
+    .title {
+      font-size: 2rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  .server-statics {
+    grid-area: server-statics;
+  }
+  .server-chart {
+    grid-area: server-chart;
+  }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./build-server-page.styles.scss";
-import Card from "../../components/card/card.component";
 import UserServices from "../../components/user-services/user-services.component";
 import SelectOS from "../../components/select-os/select-os.component";
 import SelectResource from "../../components/select-resource/select-resource.component";
