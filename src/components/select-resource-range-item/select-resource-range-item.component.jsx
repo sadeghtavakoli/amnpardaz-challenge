@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import InputRange from "react-input-range";
 import "react-input-range/lib/css/index.css";
 import "./select-resource-range-item.styles.scss";
@@ -19,7 +19,7 @@ const SelectResourceRangeItem = ({
 }) => {
   return (
     <div className="select-resource-range-item">
-      <div className="range">
+      <div className={`range range--${color}`}>
         <InputRange
           minValue={minValue}
           maxValue={maxValue}

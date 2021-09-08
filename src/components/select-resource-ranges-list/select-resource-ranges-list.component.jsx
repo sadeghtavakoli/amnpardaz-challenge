@@ -13,8 +13,7 @@ const initialResourceList = [
     maxValue: 64,
     value: 16,
     defaultValue: 16,
-    color: "#19B69B",
-    trailColor: "#D4FFF8",
+    color: "green",
   },
   {
     id: 1,
@@ -25,8 +24,7 @@ const initialResourceList = [
     maxValue: 32,
     value: 8,
     defaultValue: 8,
-    color: "#FFBC1F",
-    trailColor: "#FFF5CC",
+    color: "yellow",
   },
   {
     id: 2,
@@ -37,8 +35,7 @@ const initialResourceList = [
     maxValue: 1000,
     value: 500,
     defaultValue: 500,
-    color: "#02A0FC",
-    trailColor: "#CCF8FE",
+    color: "blue",
   },
 ];
 

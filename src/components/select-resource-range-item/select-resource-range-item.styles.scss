@@ -4,9 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .range {
-    flex: 0.5;
-  }
+
   .name {
     font-size: 1.4rem;
     flex: 0.5;
@@ -19,6 +17,82 @@
       height: 2.5rem;
       padding: 5px;
       border-radius: 50%;
+    }
+  }
+  .range {
+    flex: 0.5;
+    .input-range__track {
+      height: 0.5rem;
+    }
+    .input-range {
+      width: 100%;
+      max-width: 25rem;
+    }
+    .input-range__label {
+      color: black;
+    }
+    &.range--green {
+      .input-range__slider {
+        background: #19b69b;
+        border: 1px solid #19b69b;
+      }
+      .input-range--disabled .input-range__slider {
+        background: #19b69b;
+        border: 1px solid #19b69b;
+      }
+
+      .input-range__track {
+        background: #d4fff8;
+      }
+      .input-range--disabled .input-range__track {
+        background: #d4fff8;
+      }
+
+      .input-range__track--active {
+        background: #19b69b;
+      }
+    }
+    &.range--yellow {
+      .input-range__slider {
+        background: #ffbc1f;
+        border: 1px solid #ffbc1f;
+      }
+      .input-range--disabled .input-range__slider {
+        background: #ffbc1f;
+        border: 1px solid #ffbc1f;
+      }
+
+      .input-range__track {
+        background: #fff5cc;
+      }
+      .input-range--disabled .input-range__track {
+        background: #fff5cc;
+      }
+
+      .input-range__track--active {
+        background: #ffbc1f;
+      }
+    }
+    &.range--blue {
+      .input-range__slider {
+        background: #02a0fc;
+        border: 1px solid #02a0fc;
+      }
+      .input-range--disabled .input-range__slider {
+        background: #02a0fc;
+        border: 1px solid #02a0fc;
+      }
+
+      .input-range__track {
+        background: #ccf8fe;
+      }
+      .input-range--disabled .input-range__track {
+        background: #ccf8fe;
+      }
+
+      .input-range__track--active {
+        background: #02a0fc;
+      }
     }
   }
 }
