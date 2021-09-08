@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./select-resource-ranges-list.styles.scss";
-import SelectResourceRange from "../select-resource-radio-button/select-resource-radio-button.component";
 import SelectResourceRangeItem from "../select-resource-range-item/select-resource-range-item.component";
 
 const initialResourceList = [

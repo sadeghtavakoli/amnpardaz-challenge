@@ -1,0 +1,9 @@
+.server-statics {
+  grid-area: server-statics;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
