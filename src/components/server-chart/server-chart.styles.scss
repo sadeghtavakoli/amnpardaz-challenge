@@ -1,0 +1,24 @@
+.server-chart {
+  grid-area: server-chart;
+  background: var(--primary_color);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 2rem;
+  .chart-header {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    .more-btn {
+      cursor: pointer;
+      background-color: var(--primary_color);
+      &:active {
+        color: var(--secondary_color);
+      }
+    }
+  }
+}

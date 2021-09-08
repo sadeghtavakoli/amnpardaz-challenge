@@ -1,12 +1,12 @@
 import React from "react";
 import "./server-detail-page.styles.scss";
 import UserServices from "../../components/user-services/user-services.component";
-import Card from "../../components/card/card.component";
 import ServerDetailHeader from "../../components/server-detail-header/server-detail-header";
 import ServerStatics from "../../components/server-statics/server-statics.component";
+import ServerChart from "../../components/server-chart/server-chart.component";
 
 const serverInfo = {
-  name: "Iran-cloud server",
+  name: "Iran-Cloud Server",
   IP: "185.105.237.55",
   isActive: true,
   statics: [
@@ -55,7 +55,7 @@ const ServerDetail = () => {
       <UserServices showMoreButtonIcon />
 
       <ServerStatics statics={statics} />
-      <Card className="server-chart" />
+      <ServerChart />
     </section>
   );
 };
